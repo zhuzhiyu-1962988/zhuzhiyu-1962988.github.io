@@ -5,20 +5,79 @@
 </head>
 <body>
     <h1>Original Work: Show your embedding stuff</h1>
-<!--
-Level 1: Newbie. Show us a page that has:
-- [ ] A Youtube video
-- [ ] A google map
-- [ ] One more thing that we did not demo in the workshop
-Level 2: Apprentice. Show us a page that has:
-- [ ] A Youtube video that plays starting at minute 3
-- [ ] A video that plays using the HTML5 video tag
-- [ ] Something using the object tag
-Level 3: Master. Show us a page that has:
-- [ ] A Youtube video that plays starting at minute 3 and another feature that you can't get from the basic embed code you paste from Youtube
-- [ ] A video and audio file that plays using the HTML5 video and audio tags
-- [ ] Something using the object tag that is not flash
-- [ ] An RSS feed displayed
--->
+
+    <section id="list">
+        <h2>Not Demoed in Workshop - List!</h2>
+        <!-- Level 1: Newbie - One more thing that we did not demo in the workshop -->
+        <ul>
+            <li><a href="#list">List</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#object">Object</a></li>
+            <li><a href="#rss">RSS</a></li>
+        </ul>
+    </section>
+    
+
+    <section id="youtube">
+        <h2>YouTube Video Starting at 3:00 + Mute Autoplay</h2>
+        <!-- Level 1: Newbie - A YouTube video -->
+        <!-- Level 2: Apprentice - A YouTube video that plays starting at minute 3 -->
+        <!-- Level 3: Master - A YouTube video that plays starting at minute 3 and 
+             another feature that you can't get from the basic embed code you paste from YouTube -->
+        <!--
+        References for discovering autoplay option and solving autoplay not playing
+        - https://support.google.com/youtube/answer/171780#zippy=%2Cmake-an-embedded-video-play-automatically
+        - https://developer.chrome.com/blog/autoplay/
+        - https://stackoverflow.com/questions/35044594/youtube-how-to-present-embed-video-with-sound-muted
+        -->
+        <iframe width="600" height="338" 
+        src="https://www.youtube-nocookie.com/embed/thOifuHs6eY?start=180&autoplay=1&mute=1" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </section>
+
+    <section id="map">
+        <h2>A Google Map</h2>
+        <!-- Level 1: Newbie - A google map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d460346.66767337854!2d10.444776785828303!3d42.76796855363332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1641533121302!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="video">
+        <h2>Video</h2>
+        <!-- Level 2: Apprentice - A video that plays using the HTML5 video tag -->
+        <video controls width="600">
+            <source src="https://invent.kde.org/network/kdeconnect-ios/uploads/4a752d97e32299f09260f4cbeeb9be0f/Share_Photos.mp4"
+                    type="video/mp4">
+
+            Sorry, your browser doesn't support embedded mp4 videos.
+        </video>
+    </section>
+
+    <section id="audio">
+        <h2>Audio</h2>
+        <!-- Level 3: Master - A video and audio file that plays using the HTML5 video and audio tags -->
+        <!-- Source: https://www.youtube.com/watch?v=MUAK1DZ7HH4 -->
+        <audio controls loop>
+            <source src="loop.mp3" type="audio/mpeg">
+            Your browser does not support embedded mp3 audio.
+        </audio>
+    </section>
+
+    <section id="object">
+        <h2>Object: PDF, not Flash</h2>
+        <!-- Level 2: Apprentice - Something using the object tag -->
+        <!-- Level 3: Master - Something using the object tag that is not flash -->
+        <object data="https://www.supremecourt.gov/opinions/20pdf/18-956_d18f.pdf" type="application/pdf" width="600" height="800"></object>
+    </section>
+
+    <section id="rss">
+        <h2>RSS Feed for GitHub Blog</h2>
+        <!-- Level 3: Master - An RSS feed displayed -->
+        <iframe src="https://github.blog/all.atom" width="600" height="800"></iframe>
+    </section>
 </body>
 </html>
