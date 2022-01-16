@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <!-- Level 3: An external style sheet -->
+        <link rel="stylesheet" href="anExternal.css">
+    </head>
+    <body>
+        <section>
+            <h2>Level 1: Newbie</h2>
+
+            <h3>Two paragraphs that each have a different font.</h3>
+            <p style="font-family: cursive;">A paragraph in cursive font</p>
+            <p style="font-family: monospace;">A paragraph in monospace font</p>
+
+            <h3>Two pictures that were originally different sizes, resized to 50px by 50px.</h3>
+            <img src="https://http.cat/404"
+                title="a image of 404 cat, originally 750px * 600px"
+                style="width: 50px; height: 50px;">
+            <img src="https://octodex.github.com/images/baracktocat.jpg"
+                title="image of GitHub's Octocat saying Obama's quote yes we code, originally 896 * 896"
+                style="width: 50px; height: 50px;">
+
+            <h3>One more unique CSS command that was not discussed in the workshop</h3>
+            <p style="transform: rotateX(180deg)">Rotated up side down</p>
+        </section>
+        
+        <section>
+            <h2>Level 2: Apprentice</h2>
+        
+            <h3>Text that is centered on a photo</h3>
+            <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
+            <div style="position: relative; width: 500px; text-align: center;">
+                <img src="https://http.cat/404"
+                     title="a image of 404 cat"
+                     style="width: 100%;">
+                <div style="position: absolute; 
+                            top: 50%; left: 50%; 
+                            transform: translate(-50%, -50%);
+                            color: red;
+                            font-weight: bold;
+                            font-size: xx-large;">
+                    hello world
+                </div>
+            </div>
+
+            <h3>A photo with 20 pixel margins on each side</h3>
+            <div style="background-color: gray;">
+                <img src="https://http.cat/404"
+                    title="a image of 404 cat"
+                    style="margin: 20px;">
+
+                <span style="color: white; font-weight: bold;">Indeed there's 20px margin on all sides</span>
+            </div>
+
+            <h3>Text with a border that uses dotted lines</h3>
+            <p style="border: dotted;">dotted lines</p>
+        </section>
+        
+        <section>
+            <h2>Level 3: Master</h2>
+
+            <p>All the styles in this section are styled using external CSS.</p>
+    
+            <h2>A floated element (to the right)</h2>
+            <p class="floating">This is floated to the right</p>
+        
+            <h2>An element with rounded border corners</h2>
+            <img src="https://octodex.github.com/images/baracktocat.jpg"
+                 title="image of GitHub's Octocat saying Obama's quote yes we code"
+                 class="rounded">
+        </section>
+    </body>
+</html>
