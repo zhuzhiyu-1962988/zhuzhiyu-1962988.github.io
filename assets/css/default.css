@@ -41,6 +41,64 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 254, 254, 0.15), rgba(255, 254, 254, 0));
 }
 
+/* CUSTOMIZATIONS */
+/* 1. background color */
+.bg-primary-gradient.accordion-body {
+  background: #ffdfd7;
+}
+/* 2. font weight */
+label.form-label {
+  font-weight: bolder !important;
+}
+/* 3. font family */
+.text-danger {
+  font-family: cursive;
+}
+/* 4. font transform */
+.text-danger.text-uppercase {
+  text-transform: capitalize !important;
+}
+/* 5. rotation */
+.img-fluid {
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+.img-fluid:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+/* 6. selection color */
+::selection {
+  background: var(--bs-purple); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--bs-purple); /* Gecko Browsers */
+}
+/* 7. hover enlarge button */
+.btn {
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in-out;
+  transition-property: transform;
+}
+.btn:hover {
+  transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+}
+/* 8. hidden */
+.list-social-icon {
+  display: none;
+}
+/* 9. font color */
+section.py-5 .text-md-start {
+  color: var(--bs-gray);
+}
+/* 10. text decoration */
+h1 {
+  text-decoration: underline;
+}
+
+/* Original */
 *,
 *::before,
 *::after {
