@@ -98,6 +98,12 @@ h1 {
   text-decoration: underline;
 }
 
+a.nav-link {
+  color: black !important;
+  text-shadow: 1px 1px white !important;
+  -webkit-text-stroke-color: white !important;
+}
+
 /* Original */
 *,
 *::before,

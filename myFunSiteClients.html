@@ -45,75 +45,86 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="myFunSite.html">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="myFunSite.html">Home</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="myFunSiteAbout.html">About us</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="myFunSiteClients.html">Clients</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium active" href="myFunSiteClients.html">Clients</a></li>
               <li class="nav-item px-2"><a class="nav-link" href="myFunSiteFAQ.html">Faq</a></li>
             </ul>
             <form class="ps-lg-5"><a class="btn btn-primary order-1 order-lg-0" href="#!">CONTACT US</a></form>
           </div>
         </div>
       </nav>
-      <section id="home">
-        <div class="bg-holder" style="background-image:url(assets/img/gallery/header-bg.png);background-position:center;background-size:cover;">
-        </div>
-        <!--/.bg-holder-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="clients">
 
         <div class="container">
-          <div class="row align-items-center min-vh-50 min-vh-sm-100">
-            <div class="col-md-7 col-lg-6 text-md-start text-center">
-              <h1 class="text-light fs-6 fs-xl-8 font-cursive fw-normal mb-5">Your awesome<br />shipping <br />assistant.</h1><a class="btn btn-primary" href="#" role="button">GET STARTED
-                <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                </svg></a>
+          <div class="row">
+            <div class="col-md-11 col-lg-6 col-xl-4 col-xxl-3">
+              <h4 class="text-danger text-uppercase">Testimonial</h4>
+              <h1 class="font-cursive fw-normal mb-5">Our Awesome <br />Clients </h1>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="bg-holder" style="background-image:url(assets/img/gallery/footer-bg.png);background-position:left;background-size:contain;padding:5px 3px;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row min-vh-lg-50 min-vh-xl-75">
-            <div class="col-lg-6 col-xl-5 my-2 py-9 d-none d-lg-block">
-              <div class="card card-span bg-transparent border-start border-primary border-5 mt-3">
-                <div class="card-body">
-                  <p class="text-light fs-2 lh-lg px-lg-3">
-                    Ready? Set. Ship it!
-                  </p>
+            <div class="col-xxl-9">
+              <!-- <div class="position-relative offset-9 offset-sm-10 offset-lg-11 mb-3"><a class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div> -->
+              <div class="carousel slide" id="carouselExampleDark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"> <!-- data-bs-interval="10000" -->
+                    <div class="row h-100 mx-1 mb-5 mt-3 gx-md-2 gx-lg-4">
+                      <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="card card-span h-100 shadow-primary">
+                          <div class="card-body my-3">
+                            <p class="mb-0 px-3 px-md-2 px-xxl-3">
+                              I shipped my entire house to my new private island. Worked perfectly!
+                            </p>
+                            <div class="align-items-xl-center d-block d-xl-flex px-3 mt-3 align-self-end"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/isak.png" width="50" alt="" />
+                              <div class="flex-1 align-items-center pt-2">
+                                <h6 class="mb-0">Isak Pettersson</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="card card-span h-100 shadow-primary">
+                          <div class="card-body my-3">
+                            <p class="mb-0 px-3 px-md-2 px-xxl-3">
+                              OwO What's this? It's boundless shipping! I'm so happy that they shipped me from UW Seattle to UW Tacoma right on time for my classes.
+                            </p>
+                            <div class="align-items-xl-center d-block d-xl-flex px-3 mt-3 align-self-end"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/simon.png" width="50" alt="" />
+                              <div class="flex-1 align-items-center pt-2">
+                                <h6 class="mb-0">Simon Sandberg</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="card card-span h-100 shadow-primary">
+                          <div class="card-body my-3">
+                            <p class="mb-0 px-3 px-md-2 px-xxl-3">
+                              I use Boundless Shipping for sending out packages for my online shop, and my customers never complained. Great service for the price.
+                            </p>
+                            <div class="align-items-xl-center d-block d-xl-flex px-3 mt-3 align-self-end"><img class="img-fluid me-3 me-md-2 me-lg-3" src="assets/img/gallery/petter.png" width="50" alt="" />
+                              <div class="flex-1 align-items-center pt-2">
+                                <h6 class="mb-0">Pettersson</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-xl-5 mb-3">
-              <div class="card card-span shadow py-4 px-5">
-                <div class="card-body">
-                  <form class="row g-3 align-items-center">
-                    <div class="mb-3">
-                      <label class="form-label" for="formGroupExampleInput">Name</label>
-                      <input class="form-control form-traffico-control" id="formGroupExampleInput" type="text" placeholder="Name" />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label" for="formGroupExampleInput2">Email address</label>
-                      <input class="form-control form-traffico-control" id="formGroupExampleInput2" type="text" placeholder="Your email address" />
-                    </div>
-                    <div class="col-12">
-                      <button class="btn btn-primary" type="submit">GET STARTED
-                        <svg class="bi bi-arrow-right ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
-                        </svg>
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
+        <!-- end of .container-->
 
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
